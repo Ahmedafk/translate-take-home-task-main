@@ -1,0 +1,20 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "Cirevo take-home translation task.",
+  "main": "index.js",
+  "scripts": {
+    "start": "mkdir -p results && ts-node src/translate-wrapper.ts"
+  },
+  "author": "Cirevo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "exceljs": "^4.4.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.18",
+    "ts-node": "^10.9.2"
+  }
+}
