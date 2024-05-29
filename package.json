@@ -4,16 +4,25 @@
   "description": "Cirevo take-home translation task.",
   "main": "index.js",
   "scripts": {
-    "start": "mkdir -p results && ts-node src/translate-wrapper.ts"
+    "setup:libre-translate": "libretranslate",
+    "setup:api": "wait-on http://localhost:5000 && ts-node src/api/index.ts",
+    "setup:script": "wait-on http://localhost:3000 && mkdir -p results && ts-node src/translate-wrapper.ts",
+    "start": "concurrently --kill-others --raw \"npm run setup:*\""
   },
   "author": "Cirevo",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.7",
+    "concurrently": "^8.2.2",
     "exceljs": "^4.4.0",
-    "typescript": "^5.3.3"
+    "express": "^4.19.2",
+    "is-word": "^1.0.4",
+    "spellchecker": "^3.7.1",
+    "typescript": "^5.3.3",
+    "wait-on": "^7.2.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/node": "^20.11.18",
     "ts-node": "^10.9.2"
   }
