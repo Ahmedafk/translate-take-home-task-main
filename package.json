@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "setup:libre-translate": "libretranslate",
-    "setup:api": "wait-on http://localhost:5000 && ts-node src/api/index.ts",
-    "setup:script": "wait-on http://localhost:3000 && mkdir -p results && ts-node src/translate-wrapper.ts",
+    "setup:api": "wait-on --timeout 10000 http://localhost:5000 && ts-node src/api/index.ts",
+    "setup:script": "wait-on --timeout 10000 http://localhost:3000 && mkdir -p results && ts-node src/translate-wrapper.ts",
     "start": "concurrently --kill-others --raw \"npm run setup:*\""
   },
   "author": "Cirevo",
