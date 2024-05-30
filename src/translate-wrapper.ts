@@ -1,25 +1,11 @@
 import axios from "axios";
 import * as ExcelJS from "exceljs";
+import { TranslateRequestBody, TranslateResponseBody } from "./models";
 
-const TRANSLATION_SERVICE_URL = "http://127.0.0.1:3000";
+const TRANSLATION_SERVICE_URL = "http://127.0.0.1:3000/translate";
 const WORDS_FILE_PATH = "src/data/wordsToTranslate.xlsx";
 const RESULTS_FILE_PATH = "results/translatedWords.xlsx";
 const TARGET_LANGUAGES = ["es", "fr", "de"];
-
-interface TranslateRequestBody {
-  words: string[];
-  targetLanguage: string;
-}
-
-interface TranslateResponseBody {
-  words: TranslatedWord[];
-  targetLanguage: string;
-}
-
-interface TranslatedWord {
-  originalWord: string;
-  translatedWord: string;
-}
 
 async function readWordsFromSpreadsheet(filePath: string): Promise<string[]> {
   const workbook = new ExcelJS.Workbook();
