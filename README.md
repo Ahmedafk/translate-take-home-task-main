@@ -1,3 +1,4 @@
+#### Note: documentation can be found in [docs.md](docs.md)
 # translate-take-home-task
 
 ## Introduction
