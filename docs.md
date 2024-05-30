@@ -41,7 +41,7 @@ This command will perform the following actions automatically:
 
 ## Libraries and packages
 
-### Express.js
+### [Express.js](https://www.npmjs.com/package/express)
 
 #### Reason for Use:
 Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
@@ -53,7 +53,7 @@ Express.js is a minimal and flexible Node.js web application framework that prov
 - **Large Ecosystem**: A vast collection of middleware and plugins is available, which can be easily integrated to extend functionality.
 - **Community Support**: A large and active community ensures that issues are quickly addressed and numerous resources are available for learning and troubleshooting.
 
-### Concurrently
+### [Concurrently](https://www.npmjs.com/package/concurrently)
 
 #### Reason for Use:
 The concurrently package allows multiple commands to run simultaneously in the same terminal window. This is useful for batching all setup scripts into one, simplifying the execution process.
@@ -63,7 +63,7 @@ The concurrently package allows multiple commands to run simultaneously in the s
 - **Simplified Execution**: Enables running multiple scripts concurrently, reducing the complexity of managing separate terminal windows for each script.
 - **Improved Workflow**: Streamlines the development process by allowing developers to run server, build, and watch scripts all at once.
 
-### Wait-on
+### [Wait-on](https://www.npmjs.com/package/wait-on)
 
 #### Reason for Use:
 The wait-on package is used to ensure that dependent scripts wait for their dependencies to be fully set up before executing. It also utilizes integrated timeout functionality to avoid stuck scripts.
@@ -73,7 +73,7 @@ The wait-on package is used to ensure that dependent scripts wait for their depe
 - **Dependency Management**: Ensures that scripts only start executing once their dependencies are ready, preventing errors related to unavailable services.
 - **Timeout Functionality**: Helps avoid indefinitely stuck scripts by providing configurable timeouts, improving reliability and stability.
 
-### LibreTranslate
+### [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)
 
 #### Reason for Use:
 LibreTranslate is used to provide efficient translation services by running locally, which is faster and more cost-effective compared to cloud-based solutions.
@@ -83,7 +83,7 @@ LibreTranslate is used to provide efficient translation services by running loca
 - **Efficiency**: Running locally reduces latency and improves response times compared to remote cloud services.
 - **Cost-Effectiveness**: Eliminates the need for paid cloud translation services, reducing operational costs.
 
-### is-word and spellchecker
+### [is-word](https://www.npmjs.com/package/is-word) and [Spellchecker](https://www.npmjs.com/package/spellchecker)
 
 #### Reason for Use:
 These packages are used to ensure that the words being translated are correctly spelled and in English.
