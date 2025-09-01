@@ -1,5 +1,5 @@
 #### Note: documentation can be found in [docs.md](docs.md)
-# translate-take-home-task
+# Translation Service Challenge
 
 ## Introduction
 
